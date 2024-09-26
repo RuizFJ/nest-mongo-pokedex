@@ -14,7 +14,7 @@ export class SeedService {
       // cortamos la url por el caracter /
       const segments = url.split('/');
       // obtenemos el penultimo segmento que es el numero del pokemon
-      const no = segments[segments.length - 2];
+      const no = +segments[segments.length - 2];
       console.log(`No: ${no}, Name: ${name}`);
 
     });
